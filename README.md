@@ -1,6 +1,7 @@
-# FXTD Studio Radiance
-
 <div align="center">
+
+![RADIANCE](docs/RADIANCE.png)
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-GPL--3.0-green)
@@ -243,15 +244,15 @@ Kodak Vision3 250D/500T, Kodak Portra 400/800, Fuji Eterna, Ilford HP5, CineStil
 
 ## External Models
 
-### Depth Anything V2
+### [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)
 The node will automatically download models from HuggingFace to `models/depth_anything`.
 - **Small**: Fast, good for video
 - **Base**: Balanced
 - **Large**: Best quality
 
 ### AI Upscale Models
-- **RealESRGAN**: x2/x4 upscaling (Standard & Anime)
-- **SUPIR**: High-fidelity restoration (v0Q, v0F)
+- **[RealESRGAN](https://github.com/xinntao/Real-ESRGAN)**: x2/x4 upscaling (Standard & Anime)
+- **[SUPIR](https://github.com/Fanghua-Yu/SUPIR)**: High-fidelity restoration (v0Q, v0F)
 
 ---
 
@@ -273,15 +274,13 @@ All critical operations are GPU-accelerated with automatic CPU fallback:
 
 ## Requirements
 
-```
-opencv-python
-imageio
-OpenEXR
-Imath
-opencolorio
-colour-science
-transformers
-```
+- [opencv-python](https://pypi.org/project/opencv-python/)
+- [imageio](https://imageio.readthedocs.io/)
+- [OpenEXR](https://pypi.org/project/OpenEXR/)
+- [Imath](https://pypi.org/project/Imath/)
+- [opencolorio](https://opencolorio.org/)
+- [colour-science](https://www.colour-science.org/)
+- [transformers](https://huggingface.co/docs/transformers/index)
 
 ---
 
