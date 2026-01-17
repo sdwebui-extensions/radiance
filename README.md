@@ -70,6 +70,10 @@ pip install -r FXTDStudio_Radiance/requirements.txt
 
 ---
 
+## Example Workflow
+
+![Example Workflow](docs/example/workflow.png)
+
 ## Quick Start
 
 ### Basic HDR Workflow
@@ -348,7 +352,7 @@ GPL-3.0 License - See [LICENSE](LICENSE)
 
 **Created by**
 
-FXTD Studios
+©FXTD Studios 
 
 ---
 
