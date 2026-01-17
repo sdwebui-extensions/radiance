@@ -1,8 +1,13 @@
 # FXTD Studio Radiance
 
-Version: 1.0.0
-License: GPL-3.0
-ComfyUI Compatible | GPU Accelerated
+<div align="center">
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-GPL--3.0-green)
+![ComfyUI](https://img.shields.io/badge/ComfyUI-Compatible-purple)
+![GPU](https://img.shields.io/badge/GPU-Accelerated-orange)
+
+</div>
 
 **Professional HDR Image Processing Suite for ComfyUI**
 
@@ -282,10 +287,7 @@ transformers
 
 ## Documentation
 
-- [Full Node Reference](docs/NODE_REFERENCE.md)
-- [GPU Optimization Guide](docs/GPU_GUIDE.md)
-- [Radiance Viewer Manual](docs/PRO_VIEWER.md)
-- [Example Workflows](examples/)
+- [Official Documentation](https://fxtd.org/radiance_docs/)
 
 ---
 
