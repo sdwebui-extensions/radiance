@@ -42,7 +42,8 @@
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/fxtdstudios/radiance.git
-pip install -r FXTDStudio_Radiance/requirements.txt
+cd radiance
+pip install -r requirements.txt
 ```
 
 ### Option 3: Manual Download
