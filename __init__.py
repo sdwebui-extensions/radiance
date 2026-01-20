@@ -15,48 +15,6 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 #                       DEPENDENCY VALIDATION
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def check_dependencies():
-    """Check for optional dependencies and print helpful messages."""
-    missing = []
-    
-    # Core dependencies (should always be available)
-    try:
-        import torch
-        import numpy
-        from PIL import Image
-    except ImportError as e:
-        print(f"[FXTDStudio Radiance] ❌ CRITICAL: Missing core dependency: {e}")
-        return
-    
-    # Optional: OpenEXR for EXR I/O
-    try:
-        import OpenEXR
-    except ImportError:
-        missing.append(("OpenEXR", "EXR file support", "pip install OpenEXR"))
-    
-    # Optional: transformers for Depth Anything V2
-    try:
-        import transformers
-    except ImportError:
-        missing.append(("transformers", "Depth Map Generator", "pip install transformers"))
-    
-    # Optional: colour-science for advanced color
-    try:
-        import colour
-    except ImportError:
-        missing.append(("colour-science", "Advanced OCIO/color", "pip install colour-science"))
-    
-    # Print optional dependency status
-    if missing:
-        print(f"[FXTDStudio Radiance] 📦 Optional dependencies not installed:")
-        for name, feature, cmd in missing:
-            print(f"    • {name}: {feature}")
-            print(f"      Install: {cmd}")
-    else:
-        print(f"[FXTDStudio Radiance] ✅ All optional dependencies available")
-
-check_dependencies()
-
 # Import all node modules
 from .nodes_hdr import NODE_CLASS_MAPPINGS as HDR_NODES, NODE_DISPLAY_NAME_MAPPINGS as HDR_NAMES
 from .nodes_grade import NODE_CLASS_MAPPINGS as GRADE_NODES, NODE_DISPLAY_NAME_MAPPINGS as GRADE_NAMES
